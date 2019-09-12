@@ -1,14 +1,24 @@
 import socket, struct
-from colorama import init, Fore, Back, Style
+from colorama import Fore, Back, Style
 
 
-pool = input("ingrese pool: ")
 
-ip,mask = pool.split('/')
 
-mask = int(mask)
+def parse_args():
+	import argparse
+	parser = argparse.ArgumentParser()
+	parser.add_argument('-p', '--ip', type=str, required=True, help="Target domain.")
+	return parser.parse_args()
+args = parse_args()
+
 
 def main():
+    
+    pool = args.ip
+    ip,mask = pool.split('/')
+    mask = int(mask)
+    
+    
     def ip2long(ip):#convierte octetos a long
         return struct.unpack("!L", socket.inet_aton(ip))[0]
 
@@ -27,7 +37,7 @@ def main():
 
     lista = []
 
-    for i in rango: #lo que sea
+    for i in rango:
         lista.append(long2ip(i))
     cantidad = len(lista)
     print("\n"+"El Pool {} de mascara {} tiene {} ips ".format(pool,mask, cantidad)+"\n")
@@ -38,5 +48,5 @@ def main():
         print(Fore.WHITE+Back.BLUE+name,"|",ip_dos[0]+Back.RESET)
     print("\n")
 
-if __name__ == "__main__":
-    main()
+
+main()
