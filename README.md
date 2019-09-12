@@ -9,6 +9,7 @@ pip3 (sudo apt-get install python3-pip)
 
 Installing
 $ wget https://github.com/demencial8/Resolucion.py/blob/master/resolucion.py
+
 $ pip3 install -r requirements.txt
 
 Uso y ejemplos
