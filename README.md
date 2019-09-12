@@ -8,7 +8,8 @@ Python 3.0 or later.
 pip3 (sudo apt-get install python3-pip)
 
 <b>Installing</b>
-$ wget https://github.com/demencial8/Resolucion.py/blob/master/resolucion.py
+$ git clone https://github.com/demencial8/Resolucion.py/blob/master/resolucion.py
+$cd Resolucion.py
 
 $ pip3 install -r requirements.txt
 
