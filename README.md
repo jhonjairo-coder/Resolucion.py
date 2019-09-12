@@ -1,1 +1,1 @@
-"# Resolucion.py" 
+Resolucion.py"
