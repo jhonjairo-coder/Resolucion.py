@@ -21,5 +21,4 @@ $ python3 resolucion.py -p 192.30.253.113/29
 
 -p --ip [pool] (required)
 
-src="https://ibb.co/72W3G5g"
 
