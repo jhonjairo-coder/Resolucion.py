@@ -1,0 +1,4 @@
+socket
+struct
+colorama
+argparse
