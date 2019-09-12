@@ -13,6 +13,7 @@ $ wget https://github.com/demencial8/Resolucion.py/blob/master/resolucion.py
 $ pip3 install -r requirements.txt
 
 Uso y ejemplos
+
 $ python3 resolucion.py -p 192.30.253.113/29
 
 
